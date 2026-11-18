@@ -9,7 +9,7 @@ import com.krakedev.artesanal.Maquina;
 public class TestLlenarJUnit {
 	@Test
 	public void testLlenarMaquina() {
-		Maquina roja=new Maquina("Pilsener","cerveza",0.02,8000);
+		Maquina roja=new Maquina("Pilsener","cerveza","23124",0.02,8000);
 		roja.llenarMaquina();
 		assertEquals(7900, roja.getCantidadActual(),0.0001);
 	}

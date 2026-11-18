@@ -15,7 +15,7 @@ public class TestServirCervezaAI {
 		// CASO 1: Verificar que se sirva correctamente la cerveza,
 		// se descuente la cantidad servida y se calcule el valor a pagar.
 
-		Maquina maquina = new Maquina("Pilsener", "Cerveza rubia", 0.05, 5000);
+		Maquina maquina = new Maquina("Pilsener", "Cerveza rubia","43234", 0.05, 5000);
 
 		maquina.llenarMaquina();
 
@@ -31,7 +31,7 @@ public class TestServirCervezaAI {
 		// CASO 2: Verificar que se pueda servir toda la cerveza disponible
 		// y que la cantidad actual quede en cero.
 
-		Maquina maquina = new Maquina("Club", "Cerveza rubia", 0.04, 1000);
+		Maquina maquina = new Maquina("Club", "Cerveza rubia","43294", 0.04, 1000);
 
 		maquina.llenarMaquina();
 
@@ -47,7 +47,7 @@ public class TestServirCervezaAI {
 		// CASO 3: Verificar que no se sirva cerveza cuando la cantidad
 		// solicitada supera la cantidad disponible.
 
-		Maquina maquina = new Maquina("Corona", "Cerveza importada", 0.03, 1000);
+		Maquina maquina = new Maquina("Corona", "Cerveza importada","87125", 0.03, 1000);
 
 		maquina.llenarMaquina();
 
@@ -63,7 +63,7 @@ public class TestServirCervezaAI {
 		// CASO 4: Verificar que la cantidad actual de cerveza
 		// no se modifique cuando no existe suficiente disponibilidad.
 
-		Maquina maquina = new Maquina("Heineken", "Cerveza verde", 0.06, 2000);
+		Maquina maquina = new Maquina("Heineken", "Cerveza verde","43234", 0.06, 2000);
 
 		maquina.llenarMaquina();
 
@@ -81,7 +81,7 @@ public class TestServirCervezaAI {
 		// CASO 5: Verificar el funcionamiento del constructor de tres
 		// parametros y comprobar que se pueda servir cerveza correctamente.
 
-		Maquina maquina = new Maquina("Stella", "Cerveza premium", 0.08);
+		Maquina maquina = new Maquina("Stella", "Cerveza premium","34223", 0.08);
 
 		assertEquals(10000, maquina.getCapacidadMaxima(), 0.0001);
 
@@ -99,7 +99,7 @@ public class TestServirCervezaAI {
 		// CASO 6: Verificar que no se pueda servir cerveza cuando
 		// la maquina esta vacia y que no se modifique su cantidad actual.
 
-		Maquina maquina = new Maquina("Budweiser", "Cerveza americana", 0.05, 3000);
+		Maquina maquina = new Maquina("Budweiser", "Cerveza americana","76232", 0.05, 3000);
 
 		double resultado = maquina.servirCerveza(100);
 

@@ -6,7 +6,7 @@ public class TestRecargar {
 
 	public static void main(String[] args) {
 		boolean resultado;
-		Maquina roja=new Maquina("Pilsener","La amarilla tricolor",0.20,20000);
+		Maquina roja=new Maquina("Pilsener","La amarilla tricolor","72345",0.20,20000);
 		System.out.println("----------ESTADO INICIAL----------");
 		roja.imprimir();
 		System.out.println("-------------RECARGA1----------");
