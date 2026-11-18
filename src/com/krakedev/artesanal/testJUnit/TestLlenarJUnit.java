@@ -11,6 +11,6 @@ public class TestLlenarJUnit {
 	public void testLlenarMaquina() {
 		Maquina roja=new Maquina("Pilsener","cerveza","23124",0.02,8000);
 		roja.llenarMaquina();
-		assertEquals(7900, roja.getCantidadActual(),0.0001);
+		assertEquals(7800, roja.getCantidadActual(),0.0001);
 	}
 }
