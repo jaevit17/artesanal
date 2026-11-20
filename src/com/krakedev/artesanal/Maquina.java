@@ -9,6 +9,7 @@ public class Maquina {
 	private double cantidadActual;
 	private String codigo;
 	//CONSTRUCTOR
+	
 	public Maquina(String nombreCerveza,String descripcion,String codigo,double precioPorMl,double capacidadMaxima) {
 		this.nombreCerveza=nombreCerveza;
 		this.descripcion=descripcion;
